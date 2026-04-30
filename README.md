@@ -1,6 +1,6 @@
 # Scotty
 
-Interface to Öbb Scotty Web App using `pyHaFAS`.
+Interface to ÖBB Scotty Web App using `pyHaFAS`.
 
 ```bash
 scotty --help
