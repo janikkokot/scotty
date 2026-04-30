@@ -14,13 +14,14 @@ def get_client():
 @click.command("scotty")
 @click.option("--origin", type=str, required=True)
 @click.option("--destination", type=str, required=True)
-@click.option("--change-time", type=int, default=10)
+@click.option("--change-time", type=int, default=10, show_default=True)
 @click.option(
     "--time",
     type=click.DateTime(
         formats=["%Y-%m-%dT%H:%M", "%H:%M"],
     ),
     default=datetime.datetime.now(),
+    show_default="NOW",
 )
 def main(origin, destination, change_time, time):
     client = next(get_client())
