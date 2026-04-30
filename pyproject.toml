@@ -1,0 +1,18 @@
+[project]
+name = "scotty"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.3.3",
+    "pyhafas>=0.6.1",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+scotty = "scotty.main:main"
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
