@@ -1,14 +1,10 @@
 [project]
 name = "scotty"
 version = "0.1.0"
-description = "Add your description here"
+description = "CLI to Öbb scotty webapp"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "click>=8.3.3",
-    "pyhafas>=0.6.1",
-    "rich>=15.0.0",
-]
+dependencies = ["click>=8.3.3", "pyhafas>=0.6.1", "rich>=15.0.0"]
 
 [project.scripts]
 scotty = "scotty.main:main"
